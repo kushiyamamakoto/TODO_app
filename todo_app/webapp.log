@@ -1,0 +1,104 @@
+2021/07/11 00:26:29 route_main.go:20: {0   0 0001-01-01 00:00:00 +0000 UTC}
+2021/07/11 00:35:35 route_main.go:20: {0   0 0001-01-01 00:00:00 +0000 UTC}
+2021/07/11 00:55:26 route_auth.go:49: database disk image is malformed
+2021/07/11 00:55:26 server.go:3139: http: superfluous response.WriteHeader call from todo_app/app/controllers.authenticate (route_auth.go:66)
+2021/07/11 23:50:03 route_auth.go:49: database disk image is malformed
+2021/07/11 23:50:03 server.go:3139: http: superfluous response.WriteHeader call from todo_app/app/controllers.authenticate (route_auth.go:66)
+2021/07/12 00:00:03 route_main.go:21: {0   0 0001-01-01 00:00:00 +0000 UTC}
+2021/07/12 00:00:11 route_main.go:21: {0   0 0001-01-01 00:00:00 +0000 UTC}
+2021/07/18 16:14:40 route_main.go:78: sql: expected 4 destination arguments in Scan, not 3
+2021/07/18 16:15:44 route_main.go:78: sql: expected 4 destination arguments in Scan, not 3
+2021/07/18 16:15:44 route_main.go:78: sql: expected 4 destination arguments in Scan, not 3
+2021/07/18 16:15:45 route_main.go:78: sql: expected 4 destination arguments in Scan, not 3
+2021/07/18 16:24:22 route_main.go:78: sql: expected 4 destination arguments in Scan, not 3
+2021/07/18 16:24:29 route_main.go:78: sql: expected 4 destination arguments in Scan, not 3
+2021/07/18 16:25:27 route_main.go:78: sql: expected 4 destination arguments in Scan, not 3
+2021/07/18 16:27:04 route_main.go:78: sql: expected 4 destination arguments in Scan, not 3
+2021/07/18 16:40:46 server.go:3139: http: panic serving [::1]:55855: runtime error: index out of range [2] with length 2
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc0001254a0)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x45033e0, 0xc0000c0018)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+todo_app/app/controllers.parseURL.func1(0x45a75d0, 0xc0000c6000, 0xc0000b0000)
+	/Users/kushiyama_makoto/go/src/todo_app/app/controllers/server.go:44 +0x15a
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a75d0, 0xc0000c6000, 0xc0000b0000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a75d0, 0xc0000c6000, 0xc0000b0000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000188000, 0x45a75d0, 0xc0000c6000, 0xc0000b0000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0001254a0, 0x45a7d80, 0xc00009e000)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/07/18 16:40:47 server.go:3139: http: panic serving [::1]:55860: runtime error: index out of range [2] with length 2
+goroutine 5 [running]:
+net/http.(*conn).serve.func1(0xc000202000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x45033e0, 0xc0000160d8)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+todo_app/app/controllers.parseURL.func1(0x45a75d0, 0xc000210000, 0xc000206000)
+	/Users/kushiyama_makoto/go/src/todo_app/app/controllers/server.go:44 +0x15a
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a75d0, 0xc000210000, 0xc000206000)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a75d0, 0xc000210000, 0xc000206000)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000188000, 0x45a75d0, 0xc000210000, 0xc000206000)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000202000, 0x45a7d80, 0xc000024080)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/07/18 16:40:52 server.go:3139: http: panic serving [::1]:55881: runtime error: index out of range [2] with length 2
+goroutine 21 [running]:
+net/http.(*conn).serve.func1(0xc000125540)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x45033e0, 0xc000134168)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+todo_app/app/controllers.parseURL.func1(0x45a75d0, 0xc0001880e0, 0xc000174100)
+	/Users/kushiyama_makoto/go/src/todo_app/app/controllers/server.go:44 +0x15a
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a75d0, 0xc0001880e0, 0xc000174100)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a75d0, 0xc0001880e0, 0xc000174100)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000188000, 0x45a75d0, 0xc0001880e0, 0xc000174100)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc000125540, 0x45a7d80, 0xc000148540)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/07/18 16:41:22 server.go:3139: http: panic serving [::1]:56004: runtime error: index out of range [2] with length 2
+goroutine 35 [running]:
+net/http.(*conn).serve.func1(0xc0000f2000)
+	/usr/local/go/src/net/http/server.go:1824 +0x153
+panic(0x45033e0, 0xc0000c0060)
+	/usr/local/go/src/runtime/panic.go:971 +0x499
+todo_app/app/controllers.parseURL.func1(0x45a75d0, 0xc0000c60e0, 0xc0000b0200)
+	/Users/kushiyama_makoto/go/src/todo_app/app/controllers/server.go:44 +0x15a
+net/http.HandlerFunc.ServeHTTP(0xc000100ff0, 0x45a75d0, 0xc0000c60e0, 0xc0000b0200)
+	/usr/local/go/src/net/http/server.go:2069 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47c5f00, 0x45a75d0, 0xc0000c60e0, 0xc0000b0200)
+	/usr/local/go/src/net/http/server.go:2448 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc000188000, 0x45a75d0, 0xc0000c60e0, 0xc0000b0200)
+	/usr/local/go/src/net/http/server.go:2887 +0xa3
+net/http.(*conn).serve(0xc0000f2000, 0x45a7d80, 0xc00009e180)
+	/usr/local/go/src/net/http/server.go:1952 +0x8cd
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3013 +0x39b
+2021/07/18 16:42:18 route_main.go:78: sql: expected 4 destination arguments in Scan, not 3
+2021/07/18 16:42:18 route_main.go:78: sql: expected 4 destination arguments in Scan, not 3
+2021/07/18 16:42:25 route_main.go:78: sql: expected 4 destination arguments in Scan, not 3
+2021/07/18 16:55:28 route_main.go:84: sql: expected 4 destination arguments in Scan, not 3
+2021/07/18 16:55:43 route_main.go:84: sql: expected 4 destination arguments in Scan, not 3
+2021/07/18 16:56:46 route_main.go:84: sql: expected 4 destination arguments in Scan, not 3
+2021/07/18 16:57:54 route_main.go:84: sql: expected 4 destination arguments in Scan, not 3
+2021/07/18 17:04:00 route_main.go:84: sql: expected 4 destination arguments in Scan, not 3
+2021/07/18 17:05:36 route_main.go:84: sql: expected 4 destination arguments in Scan, not 3
+2021/07/18 17:05:42 route_main.go:84: sql: expected 4 destination arguments in Scan, not 3
+2021/07/18 17:05:58 route_main.go:84: sql: expected 4 destination arguments in Scan, not 3
+2021/07/18 17:06:08 route_main.go:84: sql: expected 4 destination arguments in Scan, not 3
+2021/07/18 17:07:02 route_main.go:84: sql: expected 4 destination arguments in Scan, not 3
+2021/07/18 17:09:25 route_main.go:84: sql: expected 4 destination arguments in Scan, not 3
+2021/07/18 17:20:57 route_main.go:84: sql: expected 4 destination arguments in Scan, not 3
+2021/07/18 19:50:50 route_main.go:84: sql: expected 4 destination arguments in Scan, not 3
